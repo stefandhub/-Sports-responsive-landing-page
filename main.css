@@ -96,7 +96,7 @@ html, body {
     }
     .store_logo {
         width: 330px;
-        margin: 0px 20%;
+        margin: 0px 10%;
         display: flex;
         justify-content: space-between;
     }
@@ -241,7 +241,7 @@ html, body {
     } 
     .info_1st_block_1 {
         width: 100%;
-        margin-top: 92px;
+        margin-top: 0px;
     }
     .info_1st_text {
         width: 68%;
