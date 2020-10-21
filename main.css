@@ -58,7 +58,7 @@ html, body {
         background-image: none;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 360px) {
     html,body {
         padding: 0px; 
         width: 100%;
@@ -96,7 +96,7 @@ html, body {
     }
     .store_logo {
         width: 330px;
-        margin: 0px 10%;
+        margin: 0px 5%;
         display: flex;
         justify-content: space-between;
     }
@@ -107,20 +107,19 @@ html, body {
 }
 /* Info Section */
 
-.info_1st, .info_2nd {
+.info_1, .info_2 {
     width: 100%;
     height: 592px;
+    display: flex; 
 }
-.info_1st {
-    display: flex;
-    
-}
-.info_1st_block_1 {
+
+.info_1_left {
     background: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5) url(/images/info_section_background.png) ;
+    background-repeat: no-repeat;
     width: 55%;
     height: 100%;
 }
-.info_1st_text {
+.info_1_text {
     width: 29.5%;
     height: 335px;
     justify-content: space-between;
@@ -128,7 +127,7 @@ html, body {
     display: flex;
     flex-direction: column;
 }
-.info_1st_block_1_1 {
+.info_1_box_1 {
     display: flex;
     justify-content: space-between;
     width: 44%;
@@ -140,7 +139,7 @@ html, body {
     position: relative;
     top: 109px;
 }
-.info_1st_block_1_1_text {
+.box_1_text {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -153,7 +152,7 @@ html, body {
     line-height: 24px;
     color: #000000;
 }
-.info_1st_block_1_1_logos {
+.box_1_logos {
     position: relative;
     top: 46px;
 }
@@ -167,7 +166,7 @@ html, body {
     position: relative;
     right: 10px;
 }
-#info_1st_block_1_1_notifications {
+#box_1_notifications {
     width: 42%;
     height: 36px;
     background: #EEEEEE;
@@ -195,7 +194,7 @@ html, body {
     position: absolute;
     margin-left: 33px;
 }
-.info_1st_block_1_2 {
+.info_1_box_2 {
     margin-left: 32%;
 }
 .info_text_header {
@@ -220,7 +219,7 @@ html, body {
     font-size: 16px;
 }
 
-.info_2nd_text {
+.info_2_text {
     display: flex;
     flex-direction: column;
     height: 350px;
@@ -228,53 +227,108 @@ html, body {
     justify-content: space-between;
 }
 
-
-@media only screen and (max-width: 900px){
-    .info_1st {
+@media only screen and (max-width: 360px) {
+    .info_1 {
         display: flex;
         flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
+        align-items:center ;
     }
-    .info_1st, .info_2nd {
-        width: 100%;
-    } 
-    .info_1st_block_1 {
-        width: 100%;
-        margin-top: 0px;
-    }
-    .info_1st_text {
-        width: 68%;
-        height: 400px;
+    .info_1_text {
+        width: 88.5%;
+        height: 435px;
         justify-content: space-between;
-        margin-top: 333px;
+        margin-top: 0px;
+        position: relative;
+        top: 100px;
+    }
+    .info_1_left {
+        background:  linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5) url(/images/background360px.png) ;
+        transform: rotate(-90deg);
+        width: 100%;
+        position: relative;
+        top: 250px;
+        background-position: center;
+    }
+    .info_1_box_1 {
+        display: flex;
+        justify-content: space-between;
+        width: 72%;
+        height: 41%;
+        background: #FFFFFF;
+        border-radius: 2.74531px;
+        
+        position: relative;
+        top: 89px;
+        left: 120px;
+        
+        transform: rotate(90deg);
+    }
+    .box_1_text {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
+        height: 85px;
+        margin-left: 15px;
+        margin-top: 20px;
+        width: 85px;
+        font-size: 11px;
+        line-height: 15px;
+        text-align: start;
+        z-index: 2;
     }
-    .info_text_header, .info_text_1, .info_text_2, .info_title {
-        margin-bottom: 20px;
-    }
-    .info_title {
-        line-height: 37px;
-    }
-    .info_1st_block_1_1 {
-        display: flex;
-        justify-content: space-between;
-        width: 44%;
-        height: 218px;
-        background: #FFFFFF;
-        box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5);
-        border-radius: 4px;
-        margin-left: 20%;
+    .box_1_logos {
         position: relative;
-        top: 109px;
+        top: 26px;
+    }
+    #arsenal_logo {
+        width: 46px;
+        height: 57px;
+    }
+    #chelsea_logo {
+        width: 57px;
+        height: 57px;
+    }
+    #box_1_notifications {
+        width: 245px;
+        height: 33px;
+        background: #EEEEEE;
+        border-radius: 0px 0px 4px 4px;
+        position: relative;
+        left: 32%;
+        top: 3px;
+        font-size: 12.9587px;
+        line-height: 17px;
+        color: #4F4F4F;
+        text-align: start;
+        transform: rotate(90deg);
+        z-index: 3;
+    }
+    #notification_icon {
+        width: 22px;
+        height: 14px;
+    }
+    .text_modifier {
+        font-size: 12.3539px;
+        line-height: 16px;
+        font-weight: 500;
+    }
+    .text_modifier_2 {
+        font-size: 11px;
+        font-weight: normal;
+        z-index: 1;
+    }
+    .info_1_box_2 {
+        margin-left: 7%;
+        position: relative;
+        top: -35px;
+    }
+    #image_box_2 {
+        width: 237px;
+        height: 149px;
+        transform: rotate(90deg);
     }
 }
-@media only screen and (max-width: 600px) {
-    .info_1st_block_1 {
-        width: 100%;
-    }
-}
+
 /* Features Section */
 
 .features {
