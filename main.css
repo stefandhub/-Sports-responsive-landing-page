@@ -1,0 +1,322 @@
+html, body {
+    padding: 0px; 
+    width: 1440px;
+    margin: auto;
+    font-family: 'Lato';
+
+}
+@font-face  {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Regular.eot');
+    src: url('fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Lato-Regular.woff2') format('woff2'),
+         url('fonts/Lato-Regular.woff') format('woff'), 
+         url('fonts/Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Header section */
+
+.header {
+    width: 1440px;
+    height: 665px;
+    background-image: url(/images/group_10.png);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+}
+.header_logo {
+    position: relative;
+    top: 61px;
+    margin-left: 11.4%;
+}
+.header_text_1 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.03em;
+    color: #333333;
+    width: 38%;
+    margin-top: 133px;
+    margin-bottom: 30px;
+    margin-left: 11.4%;
+}
+.header_text_2 {
+    font-size: 18px;
+    line-height: 26px;
+    color: #4F4F4F;
+    width: 31%;
+    margin-bottom: 50px;
+    margin-left: 11.4%;
+}
+.store_logo {
+    margin-left: 11.4%;
+}
+@media only screen and (max-width: 900px){
+    .header {
+        background-image: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    html,body {
+        padding: 0px; 
+        width: 100%;
+        margin: auto;
+        font-family: 'Lato';
+        text-align: center;
+        
+    }
+    .header {
+        width: 100%;
+        height: 525px;
+        background-image: none;
+        background-color: #F4F6F9;
+        background-size: 100%;
+    }
+    .header_logo {
+        position: relative;
+        top: 32px;
+        margin: 0px;
+    }
+    .header_text_1 {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 39.6px;
+        letter-spacing: 0.03em;
+        color: #333333;
+        width: 88%;
+        margin: 86px auto 33px auto;
+    }
+    .header_text_2 {
+        font-size: 16px;
+        line-height: 23px;
+        width: 88%;
+        margin: 0px auto 50px auto;
+    }
+    .store_logo {
+        width: 330px;
+        margin: 0px 20%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .store_logo_modifier {
+        width: 145px;
+        height: 44px;
+    }
+}
+/* Info Section */
+
+.info_1st, .info_2nd {
+    width: 100%;
+    height: 592px;
+}
+.info_1st {
+    display: flex;
+    
+}
+.info_1st_block_1 {
+    background: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5) url(/images/info_section_background.png) ;
+    width: 55%;
+    height: 100%;
+}
+.info_1st_text {
+    width: 29.5%;
+    height: 335px;
+    justify-content: space-between;
+    margin-top: 133px;
+    display: flex;
+    flex-direction: column;
+}
+.info_1st_block_1_1 {
+    display: flex;
+    justify-content: space-between;
+    width: 44%;
+    height: 218px;
+    background: #FFFFFF;
+    box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    margin-left: 20%;
+    position: relative;
+    top: 109px;
+}
+.info_1st_block_1_1_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 139px;
+    margin-left: 15px;
+    margin-top: 20px;
+    width: 123px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+.info_1st_block_1_1_logos {
+    position: relative;
+    top: 46px;
+}
+#arsenal_logo {
+    position: relative;
+    left: 15px;
+    z-index: 1;
+}
+#chelsea_logo {
+    z-index: 2;
+    position: relative;
+    right: 10px;
+}
+#info_1st_block_1_1_notifications {
+    width: 42%;
+    height: 36px;
+    background: #EEEEEE;
+    border-radius: 0px 0px 4px 4px;
+    position: relative;
+    left: 20%;
+    top: 60px;
+    font-size: 16.7px;
+    line-height: 25px;
+    color: #4F4F4F;
+    padding-top: 13px;
+    padding-left: 15px;
+}
+.text_modifier {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+}
+.text_modifier_2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+#notifications_icon {
+    position: absolute;
+    margin-left: 33px;
+}
+.info_1st_block_1_2 {
+    margin-left: 32%;
+}
+.info_text_header {
+    color: #00ADEE;
+    font-size: 16px;
+    font-weight: bold;
+}
+.info_title {
+    color: #333333;
+    font-size: 26px;
+    font-weight: bold;
+}
+.info_text_1, .info_text_2 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: #4F4F4F;
+}
+.info_text_footer {
+    color: #00ADEE;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.info_2nd_text {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 480px;
+    justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 900px){
+    .info_1st {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .info_1st, .info_2nd {
+        width: 100%;
+    } 
+    .info_1st_block_1 {
+        width: 100%;
+        margin-top: 92px;
+    }
+    .info_1st_text {
+        width: 68%;
+        height: 400px;
+        justify-content: space-between;
+        margin-top: 333px;
+        display: flex;
+        flex-direction: column;
+    }
+    .info_text_header, .info_text_1, .info_text_2, .info_title {
+        margin-bottom: 20px;
+    }
+    .info_title {
+        line-height: 37px;
+    }
+    .info_1st_block_1_1 {
+        display: flex;
+        justify-content: space-between;
+        width: 44%;
+        height: 218px;
+        background: #FFFFFF;
+        box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
+        margin-left: 20%;
+        position: relative;
+        top: 109px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .info_1st_block_1 {
+        width: 100%;
+    }
+}
+/* Features Section */
+
+.features {
+    width: 100%;
+    height: 735px;
+    background-color: lightblue;
+}
+@media only screen and (max-width: 600px) {
+    .features {
+        width: 100%;
+    }
+}
+/* Reviews Section */
+
+.reviews {
+    width: 100%;
+    height: 431px;
+    background-color: pink;
+}
+@media only screen and (max-width: 600px) {
+    .reviews {
+        width: 100%;
+    }
+}
+/* Footer Section */
+
+.footer_1st {
+    width: 100%;
+    height: 278px;
+    background-color: yellow;
+}
+
+.footer_bottom_navbar {
+    width: 100%;
+    height: 127px;
+    background-color: blue;
+}
+@media only screen and (max-width: 600px) {
+    .footer_1st {
+        width: 100%;
+    }
+    .footer_bottom_navbar {
+        width: 100%;
+    }
+}
