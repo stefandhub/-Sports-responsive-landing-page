@@ -558,9 +558,11 @@ html, body {
     }
     .reviews_arrows {
         left: 300px;
+        width: fit-content;
     }
     #left_arrow {
          display: none;
+        
     }
 
 }
