@@ -54,9 +54,7 @@ html, body {
     margin-left: 11.4%;
 }
 @media only screen and (max-width: 900px){
-    .header {
-        background-image: none;
-    }
+    
 }
 @media only screen and (max-width: 360px) {
     html,body {
@@ -218,13 +216,26 @@ html, body {
     font-weight: bold;
     font-size: 16px;
 }
-
+.info_container_2 {
+    display: flex;
+    width: 100%;
+    
+    background-image: url(/images/Group\ 672.png);
+}
 .info_2_text {
     display: flex;
     flex-direction: column;
-    height: 350px;
-    width: 480px;
+    width: 33%;
+    margin-left: 12%;
+    margin-top: 217px;
+    height: 328px;
     justify-content: space-between;
+    }
+
+.info_2_image {
+    position: relative;
+    margin-left: 200px;
+    top: 50px;
 }
 
 @media only screen and (max-width: 360px) {
@@ -232,6 +243,7 @@ html, body {
         display: flex;
         flex-direction: column-reverse;
         align-items:center ;
+        height: fit-content;
     }
     .info_1_text {
         width: 88.5%;
@@ -327,6 +339,42 @@ html, body {
         height: 149px;
         transform: rotate(90deg);
     }
+    .info_text_header, .info_text_1, .info_text_2, .info_title {
+        margin-bottom: 20px;
+    }
+    .info_title {
+        line-height: 37px;
+    }
+    .info_container_2{
+        display: flex;
+        flex-direction: column;
+    }
+    .info_2_text {
+        position: relative;
+        
+        z-index: 1;
+        height: 341px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 340px auto 200px auto;
+    }
+    .info_2_image {
+        position: relative;
+        margin-left: 0px;
+        top: -40px;
+        background-image: url(/images/group_672_2.png);
+        background-position-y: -40px;
+        z-index: 2;
+    }
+    #phone_image {
+        width: 202px;
+        height: 411px;
+        margin: auto;
+        z-index: 3;
+        position: relative;
+        top: 60px;
+    }
 }
 
 /* Features Section */
@@ -334,11 +382,88 @@ html, body {
 .features {
     width: 100%;
     height: 735px;
-    background-color: lightblue;
+    background-color: #00ADEE;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
 }
-@media only screen and (max-width: 600px) {
+.features_title {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 37px;
+    
+    margin: 57px auto 0px auto;
+}
+.features_text {
+    display: flex;
+    flex-direction: row;
+    width: 77%;
+    justify-content: space-between;
+    margin-left: 11%;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+.features_text_width {
+    width: 27.5%;
+}
+.f_text_1 {
+    margin-top: 54px;
+}
+.f_text_2 {
+    margin-top: 45px;
+}
+.f_text_3 {
+    margin-top: 31px;
+}
+#features_decoration {
+    position: absolute;
+}
+
+@media only screen and (max-width: 360px) {
     .features {
-        width: 100%;
+        width: 87%;
+        background: none;
+        height: fit-content;
+    }
+    .features_title {
+        color: #333333;
+        margin: 57px 0px 0px 13%;
+        text-align: center;
+        
+    }
+    #features_decoration {
+        display: none;
+    }
+    .features_text {
+        display: flex;
+        flex-direction: column;
+        width: 88%;
+        justify-content: inherit;
+        margin-left: 17%;
+        font-size: 16px;
+        line-height: 23px;
+        color: #333333;
+    }
+    .features_text_width {
+        width: 88.5%;
+        margin-top: 50px;
+    }
+    .svg_color {
+        filter: invert(24%) sepia(46%) saturate(6451%) hue-rotate(163deg) brightness(99%) contrast(101%);
+    }
+    .point {
+        display: none;
+    }
+    .f_text_1 {
+        margin-top: 0px;
+    }
+    .f_text_2 {
+        margin-top: 0px;
+    }
+    .f_text_3 {
+        margin-top: 0px;
     }
 }
 /* Reviews Section */
