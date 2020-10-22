@@ -536,6 +536,13 @@ html, body {
     margin-top: 47px;
 
 }
+.reviews_arrows {
+    position: absolute;
+    width: 66%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 210px;
+}
 @media only screen and (max-width: 360px) {
     .reviews {
         width: 100%;
@@ -549,6 +556,13 @@ html, body {
         margin: auto;
         text-align: left;
     }
+    .reviews_arrows {
+        left: 300px;
+    }
+    #left_arrow {
+         display: none;
+    }
+
 }
 /* Featured Section */
 .fetured_section {
