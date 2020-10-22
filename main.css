@@ -678,13 +678,62 @@ html, body {
 .footer_bottom_navbar {
     width: 100%;
     height: 127px;
-    background-color: blue;
+    background-color: #00ADEE;
+}
+.footer_bottom_1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 49px 11.3%;
+}
+.footer_navbar {
+    width: 26%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -75px;
+    margin: auto;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
 }
 @media only screen and (max-width: 600px) {
-    .footer_1st {
-        width: 100%;
-    }
+
     .footer_bottom_navbar {
         width: 100%;
+        height: 210px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_bottom_1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0px 0px;
+        position: relative;
+        top: 41px;
+        left: -111px;
+    }
+    .footer_social_logos {
+        margin-top: 12px;
+        position: relative;
+        left: 10px;
+    }
+    .footer_margin {
+        position: relative;
+        margin-left: 17px;
+    }
+
+    .footer_navbar {
+        width: 86%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 0px;
+        margin: ;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+        color: #FFFFFF;
     }
 }
